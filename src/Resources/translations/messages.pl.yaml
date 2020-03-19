@@ -4,6 +4,7 @@ odiseo_sylius_banner_plugin:
     edit_banner: Edytuj baner
     new_banner: Nowy baner
     mobile_image: Zdjęcie mobilne
+    schedule: Harmonogram
   menu:
     admin:
       banners: Banery
@@ -16,3 +17,5 @@ odiseo_sylius_banner_plugin:
       mobile_image: Zdjęcie mobilne
       url: URL
       description: Opis
+      starts_at: Data rozpoczęcia
+      ends_at: Data zakończenia

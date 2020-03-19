@@ -4,6 +4,7 @@ odiseo_sylius_banner_plugin:
         edit_banner: Edit banner
         new_banner: New banner
         mobile_image: Mobile image
+        schedule: Schedule
     menu:
         admin:
             banners: Banners
@@ -16,3 +17,5 @@ odiseo_sylius_banner_plugin:
             mobile_image: Mobile image
             url: URL
             description: Description
+            starts_at: Starts at
+            ends_at: Ends at

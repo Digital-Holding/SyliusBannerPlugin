@@ -10,6 +10,7 @@ use Sylius\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
 use Sylius\Bundle\ResourceBundle\Form\Type\ResourceTranslationsType;
 use Sylius\Bundle\TaxonomyBundle\Form\Type\TaxonAutocompleteChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 final class BannerType extends AbstractResourceType
@@ -40,6 +41,18 @@ final class BannerType extends AbstractResourceType
                 'multiple' => true,
                 'expanded' => true,
                 'label' => 'odiseo_sylius_banner_plugin.form.banner.channels',
+            ])
+            ->add('startsAt', DateTimeType::class, [
+                'label' => 'odiseo_sylius_banner_plugin.form.banner.starts_at',
+                'date_widget' => 'single_text',
+                'time_widget' => 'single_text',
+                'required' => false,
+            ])
+            ->add('endsAt', DateTimeType::class, [
+                'label' => 'odiseo_sylius_banner_plugin.form.banner.ends_at',
+                'date_widget' => 'single_text',
+                'time_widget' => 'single_text',
+                'required' => false,
             ])
         ;
     }

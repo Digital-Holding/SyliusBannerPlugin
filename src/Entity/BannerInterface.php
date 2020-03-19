@@ -78,4 +78,12 @@ interface BannerInterface extends
      * @return TranslationInterface
      */
     public function getTranslation(?string $locale = null): TranslationInterface;
+
+    public function getStartsAt(): ?\DateTimeInterface;
+
+    public function setStartsAt(?\DateTimeInterface $startsAt): void;
+
+    public function getEndsAt(): ?\DateTimeInterface;
+
+    public function setEndsAt(?\DateTimeInterface $endsAt): void;
 }

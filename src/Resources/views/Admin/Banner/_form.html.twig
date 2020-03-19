@@ -14,6 +14,12 @@
         <div class="ui segment">
             {{ form_row(form.channels) }}
         </div>
+        <h4 class="ui dividing header">{{ 'odiseo_sylius_banner_plugin.ui.schedule'|trans }}</h4>
+
+        <div class="two fields">
+            {{ form_row(form.startsAt) }}
+            {{ form_row(form.endsAt) }}
+        </div>
     </div>
 </div>
 

@@ -35,6 +35,12 @@ class Banner implements BannerInterface
     /** @var Collection|TaxonInterface[] */
     private $taxons;
 
+    /** @var \DateTimeInterface */
+    protected $startsAt;
+
+    /** @var \DateTimeInterface */
+    protected $endsAt;
+
     public function __construct()
     {
         $this->initializeTranslationsCollection();
@@ -267,5 +273,37 @@ class Banner implements BannerInterface
     protected function createTranslation(): TranslationInterface
     {
         return new BannerTranslation();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getStartsAt(): ?\DateTimeInterface
+    {
+        return $this->startsAt;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setStartsAt(?\DateTimeInterface $startsAt): void
+    {
+        $this->startsAt = $startsAt;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getEndsAt(): ?\DateTimeInterface
+    {
+        return $this->endsAt;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setEndsAt(?\DateTimeInterface $endsAt): void
+    {
+        $this->endsAt = $endsAt;
     }
 }
