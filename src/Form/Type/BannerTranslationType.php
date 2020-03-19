@@ -6,6 +6,7 @@ namespace Odiseo\SyliusBannerPlugin\Form\Type;
 
 use Sylius\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;
@@ -30,6 +31,10 @@ final class BannerTranslationType extends AbstractResourceType
             ])
             ->add('url', TextType::class, [
                 'label' => 'odiseo_sylius_banner_plugin.form.banner.url',
+                'required' => false
+            ])
+            ->add('description', TextareaType::class, [
+                'label' => 'odiseo_sylius_banner_plugin.form.banner.description',
                 'required' => false
             ])
         ;

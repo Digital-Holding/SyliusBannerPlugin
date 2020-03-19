@@ -30,6 +30,9 @@ class BannerTranslation extends AbstractTranslation implements BannerTranslation
     /** @var string|null */
     private $url;
 
+    /** @var string|null */
+    protected $description;
+
     public function __construct()
     {
         $this->createdAt = new \DateTime();
@@ -123,5 +126,21 @@ class BannerTranslation extends AbstractTranslation implements BannerTranslation
     public function getUrl(): ?string
     {
         return $this->url;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setDescription(?string $description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
     }
 }

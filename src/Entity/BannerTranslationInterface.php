@@ -63,4 +63,14 @@ interface BannerTranslationInterface extends
      * @return string|null
      */
     public function getUrl(): ?string;
+
+    /**
+     * @param string|null $description
+     */
+    public function setDescription(?string $description): void;
+
+    /**
+     * @return string|null
+     */
+    public function getDescription(): ?string;
 }

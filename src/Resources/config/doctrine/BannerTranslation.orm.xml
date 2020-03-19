@@ -20,5 +20,6 @@
         <field name="updatedAt" type="datetime" column="updated_at">
             <gedmo:timestampable on="update"/>
         </field>
+        <field name="description" type="string" nullable="true"/>
     </mapped-superclass>
 </doctrine-mapping>

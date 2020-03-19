@@ -1,0 +1,10 @@
+odiseo_sylius_banner_plugin:
+  banner:
+    code:
+      unique: Baner z danym kodem już istnieje.
+      not_blank: Proszę podać kod baneru.
+      min_length: Kod musi zawierać przynajmniej {{ limit }} cyfr.
+      max_length: Kod może zawierać maksymalnie {{ limit }} cyfr.
+  banner_translation:
+    image_file:
+      not_blank: Proszę wybrać zdjęcie.
