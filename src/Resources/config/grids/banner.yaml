@@ -18,6 +18,12 @@ sylius_grid:
                     path: imageName
                     options:
                         template: "@OdiseoSyliusBannerPlugin/Field/_image.html.twig"
+                backgroundImage:
+                    type: twig
+                    label: odiseo_sylius_banner_plugin.ui.background_image
+                    path: backgroundImageName
+                    options:
+                        template: "@OdiseoSyliusBannerPlugin/Field/_backgroundImage.html.twig"
                 mobileImage:
                     type: twig
                     label: odiseo_sylius_banner_plugin.ui.mobile_image

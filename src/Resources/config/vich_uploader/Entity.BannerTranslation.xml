@@ -1,4 +1,5 @@
 <vich_uploader class="Odiseo\SyliusBannerPlugin\Entity\BannerTranslation">
     <field mapping="banner_image" name="imageFile" filename_property="image_name"/>
     <field mapping="banner_image" name="mobileImageFile" filename_property="mobile_image_name"/>
+    <field mapping="banner_image" name="backgroundImageFile" filename_property="background_image_name"/>
 </vich_uploader>

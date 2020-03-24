@@ -73,4 +73,24 @@ interface BannerTranslationInterface extends
      * @return string|null
      */
     public function getDescription(): ?string;
+
+    /**
+     * @return File|null
+     */
+    public function getBackgroundImageFile(): ?File;
+
+    /**
+     * @param File|null $file
+     */
+    public function setBackgroundImageFile(?File $file): void;
+
+    /**
+     * @return string|null
+     */
+    public function getBackgroundImageName(): ?string;
+
+    /**
+     * @param string|null $backgroundImageName
+     */
+    public function setBackgroundImageName(?string $backgroundImageName): void;
 }

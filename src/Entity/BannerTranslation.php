@@ -22,6 +22,12 @@ class BannerTranslation extends AbstractTranslation implements BannerTranslation
     private $imageName;
 
     /** @var File|null */
+    private $backgroundImageFile;
+
+    /** @var string|null */
+    private $backgroundImageName;
+
+    /** @var File|null */
     private $mobileImageFile;
 
     /** @var string|null */
@@ -142,5 +148,39 @@ class BannerTranslation extends AbstractTranslation implements BannerTranslation
     public function getDescription(): ?string
     {
         return $this->description;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getBackgroundImageFile(): ?File
+    {
+        return $this->backgroundImageFile;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setBackgroundImageFile(?File $file): void
+    {
+        $this->backgroundImageFile = $file;
+
+        $this->setUpdatedAt(new \DateTime());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getBackgroundImageName(): ?string
+    {
+        return $this->backgroundImageName;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setBackgroundImageName(?string $backgroundImageName): void
+    {
+        $this->backgroundImageName = $backgroundImageName;
     }
 }

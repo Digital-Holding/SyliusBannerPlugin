@@ -306,4 +306,48 @@ class Banner implements BannerInterface
     {
         $this->endsAt = $endsAt;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setBackgroundImageFile(?File $file): void
+    {
+        /** @var BannerTranslationInterface $bannerTranslation */
+        $bannerTranslation = $this->getTranslation();
+
+        $bannerTranslation->setBackgroundImageFile($file);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getBackgroundImageFile(): ?File
+    {
+        /** @var BannerTranslationInterface $bannerTranslation */
+        $bannerTranslation = $this->getTranslation();
+
+        return $bannerTranslation->getBackgroundImageFile();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setBackgroundImageName(?string $backgroundImageName): void
+    {
+        /** @var BannerTranslationInterface $bannerTranslation */
+        $bannerTranslation = $this->getTranslation();
+
+        $bannerTranslation->setBackgroundImageName($backgroundImageName);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getBackgroundImageName(): ?string
+    {
+        /** @var BannerTranslationInterface $bannerTranslation */
+        $bannerTranslation = $this->getTranslation();
+
+        return $bannerTranslation->getBackgroundImageName();
+    }
 }

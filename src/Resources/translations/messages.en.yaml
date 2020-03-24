@@ -5,6 +5,7 @@ odiseo_sylius_banner_plugin:
         new_banner: New banner
         mobile_image: Mobile image
         schedule: Schedule
+        background_image: Background image
     menu:
         admin:
             banners: Banners
@@ -19,3 +20,4 @@ odiseo_sylius_banner_plugin:
             description: Description
             starts_at: Starts at
             ends_at: Ends at
+            background_image: Background image

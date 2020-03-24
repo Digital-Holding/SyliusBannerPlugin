@@ -29,6 +29,9 @@ final class BannerTranslationType extends AbstractResourceType
             ->add('mobileImageFile', FileType::class, [
                 'label' => 'odiseo_sylius_banner_plugin.form.banner.mobile_image',
             ])
+            ->add('backgroundImageFile', FileType::class, [
+                'label' => 'odiseo_sylius_banner_plugin.form.banner.background_image',
+            ])
             ->add('url', TextType::class, [
                 'label' => 'odiseo_sylius_banner_plugin.form.banner.url',
                 'required' => false

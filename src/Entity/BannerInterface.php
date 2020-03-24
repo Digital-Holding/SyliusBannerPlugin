@@ -86,4 +86,12 @@ interface BannerInterface extends
     public function getEndsAt(): ?\DateTimeInterface;
 
     public function setEndsAt(?\DateTimeInterface $endsAt): void;
+
+    public function setBackgroundImageFile(?File $file): void;
+
+    public function getBackgroundImageFile(): ?File;
+
+    public function setBackgroundImageName(?string $backgroundImageName): void;
+
+    public function getBackgroundImageName(): ?string;
 }

@@ -5,6 +5,7 @@ odiseo_sylius_banner_plugin:
     new_banner: Nowy baner
     mobile_image: Zdjęcie mobilne
     schedule: Harmonogram
+    background_image: Zdjęcie tła
   menu:
     admin:
       banners: Banery
@@ -19,3 +20,4 @@ odiseo_sylius_banner_plugin:
       description: Opis
       starts_at: Data rozpoczęcia
       ends_at: Data zakończenia
+      background_image: Zdjęcie tła
