@@ -21,3 +21,5 @@ odiseo_sylius_banner_plugin:
             starts_at: Starts at
             ends_at: Ends at
             background_image: Background image
+            title: Title
+            short_description: Short description

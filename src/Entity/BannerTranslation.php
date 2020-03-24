@@ -39,6 +39,12 @@ class BannerTranslation extends AbstractTranslation implements BannerTranslation
     /** @var string|null */
     protected $description;
 
+    /** @var string|null */
+    protected $shortDescription;
+
+    /** @var string|null */
+    protected $title;
+
     public function __construct()
     {
         $this->createdAt = new \DateTime();
@@ -182,5 +188,37 @@ class BannerTranslation extends AbstractTranslation implements BannerTranslation
     public function setBackgroundImageName(?string $backgroundImageName): void
     {
         $this->backgroundImageName = $backgroundImageName;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getShortDescription(): ?string
+    {
+        return $this->shortDescription;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setShortDescription(?string $shortDescription): void
+    {
+        $this->shortDescription = $shortDescription;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getTitle(): ?string
+    {
+        return $this->title;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setTitle(?string $title): void
+    {
+        $this->title = $title;
     }
 }

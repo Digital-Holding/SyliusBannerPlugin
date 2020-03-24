@@ -93,4 +93,24 @@ interface BannerTranslationInterface extends
      * @param string|null $backgroundImageName
      */
     public function setBackgroundImageName(?string $backgroundImageName): void;
+
+    /**
+     * @return string|null
+     */
+    public function getShortDescription(): ?string;
+
+    /**
+     * @param string|null $shortDescription
+     */
+    public function setShortDescription(?string $shortDescription): void;
+
+    /**
+     * @return string|null
+     */
+    public function getTitle(): ?string;
+
+    /**
+     * @param string|null $title
+     */
+    public function setTitle(?string $title): void;
 }

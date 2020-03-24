@@ -22,5 +22,7 @@
             <gedmo:timestampable on="update"/>
         </field>
         <field name="description" type="string" nullable="true"/>
+        <field name="shortDescription" type="string" nullable="true"/>
+        <field name="title" type="string" nullable="true"/>
     </mapped-superclass>
 </doctrine-mapping>
