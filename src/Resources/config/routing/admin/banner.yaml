@@ -14,3 +14,19 @@ odiseo_sylius_banner_plugin_admin_banner:
             index:
                 icon: image
     type: sylius.resource
+
+
+odiseo_sylius_banner_plugin_admin_banner_archive:
+    path: /banners/{id}/archive
+    methods: [PATCH]
+    defaults:
+        _controller: odiseo_sylius_banner_plugin.controller.banner:updateAction
+        _sylius:
+            section: admin
+            permission: true
+            template: '@SyliusUi/Grid/Action/archive.html.twig'
+            form:
+                type: Sylius\Bundle\ResourceBundle\Form\Type\ArchivableType
+            redirect:
+                route: odiseo_sylius_banner_plugin_admin_banner_index
+                parameters: {}

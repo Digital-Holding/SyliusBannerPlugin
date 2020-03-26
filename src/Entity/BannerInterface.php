@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Odiseo\SyliusBannerPlugin\Entity;
 
 use Sylius\Component\Channel\Model\ChannelsAwareInterface;
+use Sylius\Component\Resource\Model\ArchivableInterface;
 use Sylius\Component\Resource\Model\CodeAwareInterface;
 use Sylius\Component\Resource\Model\ResourceInterface;
 use Sylius\Component\Resource\Model\TimestampableInterface;
@@ -21,7 +22,8 @@ interface BannerInterface extends
     ToggleableInterface,
     TimestampableInterface,
     ChannelsAwareInterface,
-    TaxonsAwareInterface
+    TaxonsAwareInterface,
+    ArchivableInterface
 {
     /**
      * @param File|null $file

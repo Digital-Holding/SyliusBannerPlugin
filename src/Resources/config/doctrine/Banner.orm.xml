@@ -23,6 +23,8 @@
         <field name="startsAt" column="starts_at" type="datetime" nullable="true"/>
         <field name="endsAt" column="ends_at" type="datetime" nullable="true"/>
 
+        <field name="archivedAt" column="archived_at" type="datetime" nullable="true" />
+
         <many-to-many field="channels" target-entity="Sylius\Component\Channel\Model\ChannelInterface">
             <join-table name="odiseo_banners_channels">
                 <join-columns>
